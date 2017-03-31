@@ -1,4 +1,4 @@
-FROM lsiobase/xenial
+FROM ioft/i386-ubuntu:xenial
 MAINTAINER sparklyballs
 
 # set environment variables
