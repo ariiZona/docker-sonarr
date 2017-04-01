@@ -2,7 +2,6 @@ FROM ioft/i386-ubuntu:xenial
 MAINTAINER sparklyballs
 
 # set environment variables
-ARG DEBIAN_FRONTEND="noninteractive"
 ENV XDG_CONFIG_HOME="/config/xdg"
 
 # add sonarr repository
