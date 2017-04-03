@@ -2,6 +2,7 @@ FROM ioft/i386-ubuntu:xenial
 MAINTAINER sparklyballs
 
 # set environment variables
+ARG DEBIAN_FRONTEND="noninteractive" 
 ENV XDG_CONFIG_HOME="/config/xdg"
 
 # add sonarr repository
@@ -12,7 +13,7 @@ RUN \
 
 # install packages
  apt-get update && \
- DEBIAN_FRONTEND="noninteractive" apt-get install -y \
+ apt-get install -y \
 	libcurl3 \
 	nzbdrone && \
 
