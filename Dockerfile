@@ -30,4 +30,4 @@ COPY root/ /
 EXPOSE 8989
 VOLUME /config
 
-CMD []
+CMD ["/usr/bin/mono --debug /opt/NzbDrone/NzbDrone.exe"]
