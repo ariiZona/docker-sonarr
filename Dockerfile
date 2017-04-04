@@ -1,4 +1,4 @@
-FROM ioft/i386-ubuntu:xenial
+FROM arizonaa/baseimage-xenial
 MAINTAINER sparklyballs
 
 # environment settings
@@ -29,5 +29,3 @@ COPY root/ /
 # ports and volumes
 EXPOSE 8989
 VOLUME /config
-
-CMD ["/usr/bin/mono --debug /opt/NzbDrone/NzbDrone.exe"]
