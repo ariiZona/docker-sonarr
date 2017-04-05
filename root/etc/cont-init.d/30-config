@@ -5,7 +5,7 @@ if [ ! -d "/opt/sonarr" ]; then
  mkdir -p /opt/sonarr && \
  curl -o \
  /tmp/sonarr.tar.gz -L \
-        "https://download.sonarr.tv/v2/phantom/latest/NzbDrone.phantom.tar.gz" && \
+        "http://download.sonarr.tv/v2/master/latest/NzbDrone.master.tar.gz" && \
  tar xf \
  /tmp/sonarr.tar.gz -C \
         /opt/sonarr --strip-components=1 && \
