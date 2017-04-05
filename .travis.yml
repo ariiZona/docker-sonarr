@@ -9,5 +9,5 @@ go:
   - '1.5'
 
 after_success:
-  - CGO_ENABLED=0 GOOS=linux GOARCH=i386 go build main.go
+  - CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build main.go
   - docker build -f Dockerfile -t sonarr-32bit:latest .
